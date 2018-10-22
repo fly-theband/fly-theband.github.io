@@ -108,16 +108,6 @@ small a {
     .carousel {
       display: none;
     }
-
-    .card-group {
-      max-width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    .person {
-      max-height: 100px;
-    }
   }
 
 /* Medium devices (tablets, 768px and up) */
