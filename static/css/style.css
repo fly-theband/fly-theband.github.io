@@ -103,6 +103,10 @@ small a {
     .carousel {
       display: none;
     }
+
+    .player {
+      width: auto;
+    }
   }
 
 /* Medium devices (tablets, 768px and up) */
@@ -111,6 +115,10 @@ small a {
       min-width: 40%;
       display: flex;
       flex-wrap: wrap;
+    }
+
+    .player {
+      width: 100%
     }
   }
 
