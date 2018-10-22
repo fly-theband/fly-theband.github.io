@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background: #2b293c;
     color: #bdbdbd;
@@ -45,18 +49,35 @@ h3, h5 {
 }
 
 /* Member List */
+.card-group {
+  display: flex;
+  justify-content: center;
+}
+
 .person {
     -webkit-filter: grayscale(90%);
     filter: grayscale(90%); /* make all photos black and white */ 
-    border: 5px solid transparent;
+    /* border: 5px solid transparent;
     margin-bottom: 25px;
-    width: 80%;
-    opacity: 0.7;
+    width: 80%; */
+    /* opacity: 0.7; */
     max-height: 150px;
 }
 
 .person:hover {
-    border-color: #2a6471;
+    /* border-color: #2a6471; */
+    opacity: 0.8;
+}
+
+.members {
+  font-size: 1.25rem!important;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+
+small a {
+  color: white;
 }
 
 /* Shows Section */
@@ -75,14 +96,38 @@ h3, h5 {
 }
 
 /* Cards */
-.card {
+.albumcard {
     max-width: 300px;
     margin: 0 auto;
 }
 
 /* Sizing */
-@media (max-width: 600px) {
-    .carousel-caption {
-        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+
+/* Small devices (landscape phones, 576px and up) */
+  @media (max-width: 576px) {
+    .carousel {
+      display: none;
     }
-}
+
+    .card-group {
+      max-width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .person {
+      max-height: 100px;
+    }
+  }
+
+/* Medium devices (tablets, 768px and up) */
+  @media (max-width: 768px) {
+  }
+
+  /* Large devices (desktops, 992px and up) */
+  @media (max-width: 992px) {
+  }
+
+/* Extra large devices (large desktops, 1200px and up) */
+  @media (max-width: 1200px) {
+  }
