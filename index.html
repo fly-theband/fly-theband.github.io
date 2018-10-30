@@ -115,70 +115,50 @@
             <!-- Show Info -->
             <div id="shows" class="shows container">
                 <div class="container">
-                    <h3 class="text-center">UPCOMING SHOWS</h3>
-                    <ul class="list-group">
-                        <li class="list-group-item list-group-item-action">
-                          <span class="badge badge-success">Tonight!</span>
-                            October 27, 2018 @ 6:30pm | Black Forge Coffee House | <a href="https://www.facebook.com/events/549929495427162/">Event Info</a>
-                        </li>
-                        <li class="list-group-item list-group-item-action">
-<!--                           <span class="badge badge-danger">New!</span> -->
-                            December 7, 2018 @ 6:00pm | Smiling Moose | <a href="http://www.smiling-moose.com">Event Info</a>
-                        </li>
-                    </ul>
+                    <div id="accordion">
+                      <div class="card">
+                        <div class="card-header" id="headingOne">
+                          <h5 class="mb-0">
+                            <h3 class="text-center" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              UPCOMING SHOWS
+                            </h3>
+                          </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item list-group-item-action">
+                                      <!-- <span class="badge badge-danger">Recently Added!</span> -->
+                                        December 7, 2018 @ 6:00pm | Smiling Moose | <a href="http://www.smiling-moose.com">Event Info</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingTwo">
+                          <h5 class="mb-0">
+                            <h3 class="text-center collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              PAST SHOWS
+                            </h3>
+                          </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item list-group-item-action">
+                                        October 27, 2018 @ 6:30pm | Black Forge Coffee House | <a href="https://www.facebook.com/events/549929495427162/">Event Info</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
                 </div>
             </div>
 
             <!-- Members -->
-            <!-- <div id="members" class="container">
-              <div class="container">
-                <h3 class="text-center">MEMBERS</h3>
-                <p class="text-muted text-sm"><i>Click the member's image for their bio</i></p>
-                <br>
-                <div class="row">
-                  <div class="col-md-3">
-                    <h5 class="text-center">Mark Jeffries</h5>
-                    <a href="#member" data-toggle="collapse">
-                    <img src="./static/images/mark.jpeg" class="rounded-circle person" alt="Member-Mark">
-                    </a>
-                      <div id="member" class="collapse">
-                        <p>Lead Vocals</p>
-                        <p>Rhythm Guitar</p>
-                        <p>Keys</p>
-                      </div>
-                  </div>
-                  <div class="col-md-3">
-                    <h5 class="text-center">Evan Lawrence</h5>
-                    <a href="#member2" data-toggle="collapse">
-                    <img src="./static/images/evan.jpeg" class="rounded-circle person" alt="Member-Guitar">
-                    </a>
-                    <div id="member2" class="collapse">
-                      <p>Lead Guitar</p>
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <h5 class="text-center">Josh Chamberlain</h5>
-                    <a href="#member3" data-toggle="collapse">
-                    <img src="./static/images/josh.jpeg" class="rounded-circle person" alt="Member-Bass">
-                    </a>
-                    <div id="member3" class="collapse">
-                      <p>Bass</p>
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <h5 class="text-center">Garrett Grube</h5>
-                    <a href="#member4" data-toggle="collapse">
-                    <img src="./static/images/garrett.jpeg" class="rounded-circle person" alt="Member-Garrett">
-                    </a>
-                    <div id="member4" class="collapse">
-                    < p>Drums</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-
-            <!-- New Members -->
             <div id="members" class="container">
               <div class="container">
                 <h3 class="text-center">MEMBERS</h3>
